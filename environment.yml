@@ -1,0 +1,23 @@
+name: pointcloud-cls
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - h5py
+  - tqdm
+  - pandas
+  - pyyaml
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit
+  - pip:
+      - open3d
+      - tensorboard

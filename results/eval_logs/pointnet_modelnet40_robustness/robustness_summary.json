@@ -1,0 +1,58 @@
+{
+  "dropout": {
+    "severity_1": {
+      "overall_acc": 0.8456239870340356,
+      "mean_class_acc": 0.7812209302325581
+    },
+    "severity_2": {
+      "overall_acc": 0.843192868719611,
+      "mean_class_acc": 0.7769302325581395
+    },
+    "severity_3": {
+      "overall_acc": 0.8435980551053485,
+      "mean_class_acc": 0.7749302325581395
+    }
+  },
+  "noise": {
+    "severity_1": {
+      "overall_acc": 0.8403565640194489,
+      "mean_class_acc": 0.7708081395348837
+    },
+    "severity_2": {
+      "overall_acc": 0.8245542949756888,
+      "mean_class_acc": 0.7467732558139535
+    },
+    "severity_3": {
+      "overall_acc": 0.799837925445705,
+      "mean_class_acc": 0.6991511627906977
+    }
+  },
+  "rotation": {
+    "severity_1": {
+      "overall_acc": 0.8427876823338736,
+      "mean_class_acc": 0.7803546511627907
+    },
+    "severity_2": {
+      "overall_acc": 0.8460291734197731,
+      "mean_class_acc": 0.7843488372093023
+    },
+    "severity_3": {
+      "overall_acc": 0.8500810372771475,
+      "mean_class_acc": 0.7870581395348837
+    }
+  },
+  "crop": {
+    "severity_1": {
+      "overall_acc": 0.5899513776337115,
+      "mean_class_acc": 0.5375930232558139
+    },
+    "severity_2": {
+      "overall_acc": 0.42544570502431117,
+      "mean_class_acc": 0.3647151162790698
+    },
+    "severity_3": {
+      "overall_acc": 0.16288492706645058,
+      "mean_class_acc": 0.16239534883720932
+    }
+  }
+}

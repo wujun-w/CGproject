@@ -1,0 +1,16 @@
+class_name,accuracy
+bag,0.204819
+bed,0.643216
+bin,0.105263
+box,0.564516
+cabinet,0.864103
+chair,0.326667
+desk,0.563725
+display,0.947619
+door,0.647303
+pillow,0.551852
+shelf,0.481818
+sink,0.400000
+sofa,0.450000
+table,0.752381
+toilet,0.270588

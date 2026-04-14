@@ -1,0 +1,6 @@
+{
+  "best_epoch": 95,
+  "best_overall_acc": 0.46981263011797364,
+  "best_mean_class_acc": 0.39596797671240963,
+  "elapsed_minutes": 17.28847151597341
+}

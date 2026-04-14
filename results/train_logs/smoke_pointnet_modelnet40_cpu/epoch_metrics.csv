@@ -1,0 +1,2 @@
+epoch,train_loss,train_acc,train_mean_class_acc,val_loss,val_acc,val_mean_class_acc,lr
+1,2.877133,0.243191,0.099881,2.642574,0.233387,0.144610,0.00000000
