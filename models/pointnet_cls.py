@@ -33,7 +33,18 @@ class get_loss(torch.nn.Module):
         self.mat_diff_loss_scale = mat_diff_loss_scale
 
     def forward(self, pred, target, trans_feat):
-        loss = F.nll_loss(pred, target)
+        # -- 引入 Label Smoothing 标签平滑 (Advanced Requirements 20%) --
+        eps = 0.1 # 10% 的概率平摊给其他类
+        n_class = pred.size(1)
+        
+        # 将 hard label 转成 soft label
+        one_hot = torch.zeros_like(pred).scatter(1, target.view(-1, 1), 1)
+        one_hot = one_hot * (1 - eps) + (1 - one_hot) * eps / (n_class - 1)
+        
+        # 计算带标签平滑的交叉熵 (注意前向传播最后一步已经是 log_softmax 了)
+        loss = -(one_hot * pred).sum(dim=1).mean()
+        # -----------------------------------------------------------
+        
         mat_diff_loss = feature_transform_reguliarzer(trans_feat)
 
         total_loss = loss + mat_diff_loss * self.mat_diff_loss_scale
