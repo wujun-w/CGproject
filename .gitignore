@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Local IDE files
+.idea/
+
+# Data and experiment outputs
+data_cg/
+results/
+results.tar.gz
+
+# Vendor-generated files and non-code artifacts
+dgcnn-master/pytorch/pretrained/
+pointnet.pytorch-master/pointnet.egg-info/
+
+# Local backup or temporary files
+*_broken_local*
+*.log
+
+# Assignment PDF
+CS5182_Course_Project_25-26B.pdf
